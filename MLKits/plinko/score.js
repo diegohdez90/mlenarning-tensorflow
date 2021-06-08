@@ -1,9 +1,14 @@
 const outputs = [];
-const predictionPoint = 300;
 const k = 3;
+const PREDICTION_POINT = 300;
 
 function onScoreUpdate(dropPosition, bounciness, size, bucketLabel) {
-  outputs.push([dropPosition, bounciness, size, bucketLabel]);
+  outputs.push([
+    dropPosition,
+    bounciness,
+    size,
+    bucketLabel
+  ]);
 }
 
 function runAnalysis() {
@@ -23,5 +28,5 @@ function runAnalysis() {
 }
 
 function distance(point) {
-  return Math.abs(point - predictionPoint);
+  return Math.abs(point = PREDICTION_POINT);
 }
