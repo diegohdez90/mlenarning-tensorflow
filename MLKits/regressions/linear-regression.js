@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 const tf = require('@tensorflow/tfjs-node');
+=======
+const tf = require('@tensorflow/tfjs');
+>>>>>>> 085-update-resolve
 const _ = require('lodash');
 
 class LinearRegression {
@@ -38,7 +42,6 @@ class LinearRegression {
 
     this.m = this.m - mSlope * this.options.learningRate;
     this.b = this.b - bSlope * this.options.learningRate;
-
   }
 
   train() {

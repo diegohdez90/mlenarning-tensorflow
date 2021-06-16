@@ -16,7 +16,7 @@ let { features,
 
 const regression = new LinearRegression(features, labels, {
   learningRation: 0.1,
-  iterations: 100,
+  iterations: 1,
 });
 
 regression.train();
