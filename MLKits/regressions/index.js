@@ -12,5 +12,3 @@ let { features,
     dataColumns: ['horsepower'],
     labelColumns: ['mpg']
   });
-
-console.log(features, labels);
